@@ -33,6 +33,14 @@ export function PersonalInfo(props: PersonalData) {
         <label htmlFor="email">Email</label>
         <input type="email" name="email" id="email" required />
       </div>
+      <fieldset>
+        <legend>Do you want to receive info from our newsletter?</legend>
+
+        <div>
+          <input type="radio" id="yes" name="drone" value="yes" checked></input>
+          <label htmlFor="yes">Yes</label>
+        </div>
+      </fieldset>
 
       <button type="submit">Añadir</button>
     </form>
