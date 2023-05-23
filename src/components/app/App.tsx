@@ -1,9 +1,14 @@
+import { Header } from "../header/Header";
+import { PersonalInfo } from "../personal-data/PersonalData";
 import "./App.css";
 
 function App() {
   return (
     <>
-      <div></div>
+      <div>
+        <Header></Header>
+        <PersonalInfo></PersonalInfo>
+      </div>
     </>
   );
 }

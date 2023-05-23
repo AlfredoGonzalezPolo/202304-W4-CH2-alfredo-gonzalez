@@ -1,16 +1,24 @@
 import { PersonalData } from "../../model/Data";
 
-export function PersonalData: PersonalData () {
-
+export function PersonalInfo(props: PersonalData) {
+  const handleSubmit = (event: SyntheticEvent) => {
+    event.preventDefault();
+    // const form = event.target as HTMLFormElement;
+    // const task = new Task(
+    //   (form.elements.namedItem("title") as HTMLInputElement).value,
+    //   (form.elements.namedItem("owner") as HTMLInputElement).value
+    // );
+    // console.log(task);
+  };
 
   return (
-    <form aria-label="form" onSubmit={}>
+    <form aria-label="form" onSubmit={handleSubmit}>
       <div>
-        <label htmlFor="name">Name</label>
+        <label htmlFor="name">{props.name}</label>
         <input type="text" name="name" id="name" required />
       </div>
       <div>
-        <label htmlFor="lastName">Last name</label>
+        <label htmlFor="lastName">{props.lastName}</label>
         <input type="text" name="lastName" id="lastName" required />
       </div>
       <div>
@@ -28,5 +36,5 @@ export function PersonalData: PersonalData () {
 
       <button type="submit">Añadir</button>
     </form>
-  )
+  );
 }
