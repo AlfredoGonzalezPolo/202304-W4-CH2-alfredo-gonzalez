@@ -1,5 +1,5 @@
 import { Header } from "../header/Header";
-import { PersonalInfo } from "../personal-data/PersonalData";
+import { Form } from "../step1/Step1";
 
 import "./App.css";
 
@@ -8,7 +8,7 @@ function App() {
     <>
       <div>
         <Header></Header>
-        <PersonalInfo></PersonalInfo>
+        <Form></Form>
       </div>
     </>
   );
